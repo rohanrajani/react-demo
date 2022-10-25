@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body{
+  padding: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cancel-button {
+  background-color: #ffffff;
+  border-color: black;
+  border-width: thin;
+  color: black;
+}
+
+.accept-button {
+  background-color: #5b6dcd;
+  border: none;
+  color: white;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  border-radius: 6px;
+  transition: all 1s ease;
+  margin-right: 5px;
+}
+
+.button:hover {
+  filter: brightness(115%);
+}
+
+.popup {
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  min-width: 24em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  border: 5px solid black;
+  transition: all 1s ease-in-out;
+  z-index: 9999;
+}
+
+.top {
+  top: 0;
+  margin: 5px 5px 0px 0px;
+}
+
+.bottom {
+  bottom: 0;
+  margin: 0px 5px 5px 0px;
+}
+
+.hidden {
+  left: 100vw;
+}
+
+td {
+  padding: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
